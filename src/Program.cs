@@ -1,5 +1,5 @@
 ﻿
-namespace ConsoleApp
+namespace Yuuna.InteractiveDemo
 {
     using NetDimension.NanUI;
     using System;

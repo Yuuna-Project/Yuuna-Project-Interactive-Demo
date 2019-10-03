@@ -1,4 +1,4 @@
-﻿namespace ConsoleApp
+﻿namespace Yuuna.InteractiveDemo
 {
     partial class Live2dDemo
     {
