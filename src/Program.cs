@@ -25,20 +25,7 @@ namespace Yuuna.InteractiveDemo
             Application.SetCompatibleTextRenderingDefault(false);
              
             var result = Bootstrap.Load();
-
-            var nginxes = Process.GetProcessesByName("nginx.exe");
-            if(nginxes.Length == 0)
-            {
-                foreach (var item in new DirectoryInfo("./nginx").GetFiles())
-                {
-                    if(item.Name.Contains("nginx"))
-                    {
-                        Process.Start(item.FullName);
-                    }
-                }
-                nginxes = Process.GetProcessesByName("nginx.exe");
-            }
-
+             
             if (result)
             { 
                 Bootstrap.RegisterAssemblyResources(System.Reflection.Assembly.GetExecutingAssembly());
@@ -46,11 +33,7 @@ namespace Yuuna.InteractiveDemo
                 Application.Run(new Live2dDemo()); 
                 Application.Exit();
             }
-
-            foreach (var nginx in nginxes)
-            {
-                nginx.Kill();
-            }
+             
         }
     }
      

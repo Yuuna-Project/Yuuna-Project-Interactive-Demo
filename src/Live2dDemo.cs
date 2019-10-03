@@ -15,7 +15,7 @@ namespace Yuuna.InteractiveDemo
 
     public partial class Live2dDemo : WinFormium
     {
-        public Live2dDemo() : base("http://localhost/live2d/demo.html")
+        public Live2dDemo() : base("http://localhost/demo.html")
         {
             InitializeComponent();
 
