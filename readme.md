@@ -3,7 +3,12 @@
 此專案使用 Live2D 與基於 Chromium 開發的 NanUI 作為基本的 UI 介面，此範例只做展示用，本團隊不保證未來會繼續使用這項技術。
 
 ## 範例動畫
-![Demo](./img/demo.gif)
+![Demo](./image/demo.gif)
+![Demo1](./image/demo1.gif)
+
+## 已知問題
+- 圖幀邊緣鋸齒化現象
+- 偶爾破圖
 
 ## 參考/引用
 - MIT 
