@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A41CAFB7-BF3A-43F7-A9AC-1284CC1E476E}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ConsoleApp</RootNamespace>
+    <AssemblyName>ConsoleApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NetDimension.NanUI, Version=0.6.3239.21621, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NetDimension.NanUI.0.6.3239.1\lib\NetDimension.NanUI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Live2dDemo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Live2dDemo.Designer.cs">
+      <DependentUpon>Live2dDemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="nginx\conf\fastcgi.conf" />
+    <None Include="nginx\conf\fastcgi_params" />
+    <None Include="nginx\conf\koi-utf" />
+    <None Include="nginx\conf\koi-win" />
+    <None Include="nginx\conf\mime.types" />
+    <None Include="nginx\conf\nginx.conf" />
+    <None Include="nginx\conf\scgi_params" />
+    <None Include="nginx\conf\uwsgi_params" />
+    <None Include="nginx\conf\win-utf" />
+    <None Include="nginx\contrib\geo2nginx.pl" />
+    <None Include="nginx\contrib\README" />
+    <None Include="nginx\contrib\unicode2nginx\koi-utf" />
+    <None Include="nginx\contrib\unicode2nginx\unicode-to-nginx.pl" />
+    <None Include="nginx\contrib\unicode2nginx\win-utf" />
+    <None Include="nginx\contrib\vim\ftdetect\nginx.vim" />
+    <None Include="nginx\contrib\vim\ftplugin\nginx.vim" />
+    <None Include="nginx\contrib\vim\indent\nginx.vim" />
+    <None Include="nginx\contrib\vim\syntax\nginx.vim" />
+    <None Include="nginx\docs\CHANGES" />
+    <None Include="nginx\docs\CHANGES.ru" />
+    <None Include="nginx\docs\LICENSE" />
+    <None Include="nginx\docs\OpenSSL.LICENSE" />
+    <None Include="nginx\docs\PCRE.LICENCE" />
+    <None Include="nginx\docs\README" />
+    <None Include="nginx\docs\zlib.LICENSE" />
+    <None Include="nginx\html\live2d\message.json" />
+    <None Include="nginx\html\live2d\model\tia\model.json" />
+    <None Include="nginx\html\live2d\model\tia\model.moc" />
+    <None Include="nginx\html\live2d\model\tia\motions\Breath Dere1.mtn" />
+    <None Include="nginx\html\live2d\model\tia\motions\Breath Dere2.mtn" />
+    <None Include="nginx\html\live2d\model\tia\motions\Breath Dere3.mtn" />
+    <None Include="nginx\html\live2d\model\tia\motions\Breath1.mtn" />
+    <None Include="nginx\html\live2d\model\tia\motions\Breath2.mtn" />
+    <None Include="nginx\html\live2d\model\tia\motions\Breath3.mtn" />
+    <None Include="nginx\html\live2d\model\tia\motions\Breath4.mtn" />
+    <None Include="nginx\html\live2d\model\tia\motions\Breath5.mtn" />
+    <None Include="nginx\html\live2d\model\tia\motions\Breath6.mtn" />
+    <None Include="nginx\html\live2d\model\tia\motions\Breath7.mtn" />
+    <None Include="nginx\html\live2d\model\tia\motions\Breath8.mtn" />
+    <None Include="nginx\html\live2d\model\tia\motions\Breath9.mtn" />
+    <None Include="nginx\html\live2d\model\tia\motions\Fail.mtn" />
+    <None Include="nginx\html\live2d\model\tia\motions\Sleeping.mtn" />
+    <None Include="nginx\html\live2d\model\tia\motions\Success.mtn" />
+    <None Include="nginx\html\live2d\model\tia\motions\Sukebei1.mtn" />
+    <None Include="nginx\html\live2d\model\tia\motions\Sukebei2.mtn" />
+    <None Include="nginx\html\live2d\model\tia\motions\Sukebei3.mtn" />
+    <None Include="nginx\html\live2d\model\tia\motions\Touch Dere1.mtn" />
+    <None Include="nginx\html\live2d\model\tia\motions\Touch Dere2.mtn" />
+    <None Include="nginx\html\live2d\model\tia\motions\Touch Dere3.mtn" />
+    <None Include="nginx\html\live2d\model\tia\motions\Touch Dere4.mtn" />
+    <None Include="nginx\html\live2d\model\tia\motions\Touch Dere5.mtn" />
+    <None Include="nginx\html\live2d\model\tia\motions\Touch Dere6.mtn" />
+    <None Include="nginx\html\live2d\model\tia\motions\Touch1.mtn" />
+    <None Include="nginx\html\live2d\model\tia\motions\Touch2.mtn" />
+    <None Include="nginx\html\live2d\model\tia\motions\Touch3.mtn" />
+    <None Include="nginx\html\live2d\model\tia\motions\Touch4.mtn" />
+    <None Include="nginx\html\live2d\model\tia\motions\Touch5.mtn" />
+    <None Include="nginx\html\live2d\model\tia\motions\Touch6.mtn" />
+    <None Include="nginx\html\live2d\model\tia\motions\WakeUp.mtn" />
+    <None Include="nginx\logs\access.log" />
+    <None Include="nginx\logs\error.log" />
+    <None Include="nginx\logs\nginx.pid" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Live2dDemo.resx">
+      <DependentUpon>Live2dDemo.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="nginx\html\live2d\css\live2d.css" />
+    <Content Include="nginx\html\live2d\js\live2d.js" />
+    <Content Include="nginx\html\live2d\js\message.js" />
+    <Content Include="nginx\html\live2d\model\tia\textures\default-costume.png" />
+    <Content Include="nginx\nginx.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="nginx\temp\client_body_temp\" />
+    <Folder Include="nginx\temp\fastcgi_temp\" />
+    <Folder Include="nginx\temp\proxy_temp\" />
+    <Folder Include="nginx\temp\scgi_temp\" />
+    <Folder Include="nginx\temp\uwsgi_temp\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\NetDimension.NanUI.Cef3239.3.3239.1723.0\build\NetDimension.NanUI.Cef3239.targets" Condition="Exists('..\packages\NetDimension.NanUI.Cef3239.3.3239.1723.0\build\NetDimension.NanUI.Cef3239.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>此專案參考這部電腦上所缺少的 NuGet 套件。請啟用 NuGet 套件還原，以下載該套件。如需詳細資訊，請參閱 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的檔案是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\NetDimension.NanUI.Cef3239.3.3239.1723.0\build\NetDimension.NanUI.Cef3239.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NetDimension.NanUI.Cef3239.3.3239.1723.0\build\NetDimension.NanUI.Cef3239.targets'))" />
+  </Target>
+  <PropertyGroup>
+    <PostBuildEvent>mkdir nginx
+cd ../../
+xcopy nginx .\bin\debug\nginx /s/h/e/k/f/c</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+</Project>
